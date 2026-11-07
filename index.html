@@ -14,96 +14,68 @@
 
 <body>
   <!-- ====== Contenedor principal ====== -->
-  <div
-    style="--red: #C34646; --deep: #8F2B2B; --blush: #FBEFEF; --ink: #1b1111; font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; color: #1b1111; background: #ffffff; width: 100%;">
+  <div class="page-shell">
 
     <!-- ====== Header / navegación ====== -->
-    <header
-      style="background: #ffffff; padding: 20px clamp(24px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;">
-      <a href="#inicio" aria-label="Catrina Films, inicio"
-        style="display: inline-flex; align-items: baseline; background: var(--red); color: #ffffff; padding: 10px 18px;">
-        <span style="font-weight: 800; font-size: 22px; letter-spacing: -0.02em;">CATRINA</span>
-        <span style="font-weight: 200; font-size: 22px; letter-spacing: 0.01em;">FILMS</span>
+    <header class="site-header">
+      <a href="#inicio" aria-label="Catrina Films, inicio" class="brand-mark">
+        <span class="brand-mark__word">CATRINA</span>
+        <span class="brand-mark__word brand-mark__word--light">FILMS</span>
       </a>
-      <nav aria-label="Principal"
-        style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink);">
+      <nav aria-label="Principal" class="main-nav">
         <a class="nav-link" href="#nosotros">Nosotros</a>
         <a class="nav-link" href="#peliculas">Películas</a>
         <a class="nav-link" href="#servicios">Servicios</a>
-        <a class="btn-red" href="#contacto"
-          style="background: var(--red); color: #ffffff; padding: 12px 22px; min-height: 20px;">Contacto</a>
+        <a class="btn-red" href="#contacto">Contacto</a>
       </nav>
     </header>
 
 
     <!-- ====== Hero / inicio ====== -->
-    <section id="inicio" style="background: var(--red); color: #ffffff;">
-      <div aria-hidden="true"
-        style="height: 14px; background: repeating-linear-gradient(90deg, #ffffff 0, #ffffff 18px, transparent 18px, transparent 36px); opacity: 0.9;">
-      </div>
-      <div
-        style="padding: clamp(48px, 8vw, 112px) clamp(24px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: flex-end; gap: 56px 64px; max-width: 1440px; margin: 0 auto; box-sizing: border-box;">
-        <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 32px;">
-          <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;">
-            Productora de cine independiente · México</p>
-          <h1
-            style="margin: 0; font-size: clamp(40px, 8.4vw, 128px); line-height: 0.95; letter-spacing: -0.035em; font-weight: 800;">
-            CINE<br><span style="font-weight: 200; letter-spacing: -0.02em;">INDEPENDIENTE</span><br>MEXICANO</h1>
-          <p style="margin: 0; max-width: 520px; font-size: 20px; line-height: 1.5; font-weight: 300;">Desarrollamos,
+    <section id="inicio" class="hero">
+      <div aria-hidden="true" class="hero-divider"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Productora de cine independiente · México</p>
+          <h1 class="hero-title">CINE<br><span>INDEPENDIENTE</span><br>MEXICANO</h1>
+          <p class="hero-subtitle">Desarrollamos,
             producimos y acompañamos historias con voz propia, hechas desde México para el público del mundo.</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-            <a class="btn-solid" href="#peliculas"
-              style="background: #ffffff; color: var(--red); font-weight: 600; font-size: 16px; padding: 16px 28px; min-height: 20px;">Ver
-              películas</a>
-            <a class="btn-ghost" href="#contacto"
-              style="border: 2px solid #ffffff; color: #ffffff; font-weight: 600; font-size: 16px; padding: 14px 26px; min-height: 20px;">Hablemos
-              de tu proyecto</a>
+          <div class="cta-group">
+            <a class="btn-solid" href="#peliculas">Ver películas</a>
+            <a class="btn-ghost" href="#contacto">Hablemos de tu proyecto</a>
           </div>
         </div>
-        <div style="flex: 1 1 380px; min-width: 0;">
-          <div
-            style="aspect-ratio: 16 / 9; border: 2px solid #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: rgba(255,255,255,0.08);">
+        <div class="hero-media">
+          <div class="video-frame">
             <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
               <circle cx="36" cy="36" r="34" stroke="#ffffff" stroke-width="2"></circle>
               <path d="M29 22 L52 36 L29 50 Z" fill="#ffffff"></path>
             </svg>
-            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;">[Reel ·
-              Tráiler de la productora]</span>
+            <span class="video-label">[Reel · Tráiler de la productora]</span>
           </div>
         </div>
       </div>
-      <div aria-hidden="true"
-        style="height: 14px; background: repeating-linear-gradient(90deg, #ffffff 0, #ffffff 18px, transparent 18px, transparent 36px); opacity: 0.9;">
-      </div>
+      <div aria-hidden="true" class="hero-divider"></div>
     </section>
 
 
     <!-- ====== Nosotros ====== -->
-    <section id="nosotros" style="padding: clamp(64px, 9vw, 128px) clamp(24px, 5vw, 72px); background: #ffffff;">
-      <div style="max-width: 1296px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 80px;">
-        <div style="flex: 1 1 360px; min-width: 0;">
-          <p
-            style="margin: 0 0 20px 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red);">
-            Nosotros</p>
-          <h2
-            style="margin: 0; font-size: clamp(36px, 5vw, 72px); line-height: 1; letter-spacing: -0.03em; font-weight: 800; color: var(--red);">
-            LA CATRINA<br><span style="font-weight: 200;">MIRA DE FRENTE</span></h2>
+    <section id="nosotros" class="content-section content-section--white">
+      <div class="section-shell about-layout">
+        <div class="about-intro">
+          <p class="section-kicker">Nosotros</p>
+          <h2 class="section-title">LA CATRINA<br><span>MIRA DE FRENTE</span></h2>
         </div>
-        <div
-          style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px; font-size: 20px; line-height: 1.6; font-weight: 300; color: var(--ink);">
-          <p style="margin: 0;">Catrina Films es una productora independiente mexicana. Creemos en un cine con
+        <div class="about-copy">
+          <p>Catrina Films es una productora independiente mexicana. Creemos en un cine con
             identidad, que mira de frente a su gente, su humor y sus contradicciones, y que se hace con oficio y con
             riesgo.</p>
-          <p style="margin: 0;">Trabajamos de la mano de directoras y directores, guionistas y equipos creativos desde
+          <p>Trabajamos de la mano de directoras y directores, guionistas y equipos creativos desde
             la primera idea hasta la llegada a pantalla.</p>
-          <div
-            style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding-top: 16px; border-top: 2px solid var(--red);">
-            <span
-              style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red);">Ficción</span>
-            <span
-              style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red);">Documental</span>
-            <span
-              style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red);">Cortometraje</span>
+          <div class="tag-list">
+            <span class="tag">Ficción</span>
+            <span class="tag">Documental</span>
+            <span class="tag">Cortometraje</span>
           </div>
         </div>
       </div>
@@ -111,61 +83,44 @@
 
 
     <!-- ====== Catálogo / películas ====== -->
-    <section id="peliculas" style="padding: clamp(64px, 9vw, 128px) clamp(24px, 5vw, 72px); background: var(--blush);">
-      <div style="max-width: 1296px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px;">
-        <div
-          style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px;">
-          <h2
-            style="margin: 0; font-size: clamp(36px, 5vw, 72px); line-height: 1; letter-spacing: -0.03em; font-weight: 800; color: var(--red);">
-            PELÍCULAS<span style="font-weight: 200;"> / CATÁLOGO</span></h2>
-          <a class="nav-link" href="#contacto"
-            style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); border-bottom: 2px solid var(--red); padding-bottom: 4px;">Solicitar
-            el catálogo completo</a>
+    <section id="peliculas" class="content-section content-section--blush">
+      <div class="section-shell section-stack">
+        <div class="catalog-header">
+          <h2 class="section-title">PELÍCULAS<span> / CATÁLOGO</span></h2>
+          <a class="nav-link catalog-link" href="#contacto">Solicitar el catálogo completo</a>
         </div>
-        <div style="display: flex; flex-wrap: wrap; gap: 32px;">
+        <div class="catalog-grid">
 
-          <article class="card"
-            style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-            <div
-              style="aspect-ratio: 2 / 3; background: var(--red); color: #ffffff; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
-              <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">01</span>
-              <span
-                style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1; font-weight: 800; letter-spacing: -0.02em;">[TÍTULO<br><span
-                  style="font-weight: 200;">DEL FILM]</span></span>
+          <article class="film-card">
+            <div class="film-poster film-poster--red">
+              <span class="film-index">01</span>
+              <span class="film-title">[TÍTULO<br><span>DEL FILM]</span></span>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 4px;">
-              <span style="font-size: 18px; font-weight: 600;">[Título del largometraje]</span>
-              <span style="font-size: 14px; color: #5c3f3f;">[Año] · [Género] · Dir. [Nombre]</span>
+            <div class="film-meta">
+              <span class="film-name">[Título del largometraje]</span>
+              <span class="film-detail">[Año] · [Género] · Dir. [Nombre]</span>
             </div>
           </article>
 
-          <article class="card"
-            style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-            <div
-              style="aspect-ratio: 2 / 3; background: #ffffff; color: var(--red); border: 3px solid var(--red); padding: 25px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
-              <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">02</span>
-              <span
-                style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1; font-weight: 800; letter-spacing: -0.02em;">[TÍTULO<br><span
-                  style="font-weight: 200;">DEL FILM]</span></span>
+          <article class="film-card">
+            <div class="film-poster film-poster--light">
+              <span class="film-index">02</span>
+              <span class="film-title">[TÍTULO<br><span>DEL FILM]</span></span>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 4px;">
-              <span style="font-size: 18px; font-weight: 600;">[Título del documental]</span>
-              <span style="font-size: 14px; color: #5c3f3f;">[Año] · [Género] · Dir. [Nombre]</span>
+            <div class="film-meta">
+              <span class="film-name">[Título del documental]</span>
+              <span class="film-detail">[Año] · [Género] · Dir. [Nombre]</span>
             </div>
           </article>
 
-          <article class="card"
-            style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-            <div
-              style="aspect-ratio: 2 / 3; background: var(--deep); color: #ffffff; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between;">
-              <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">03</span>
-              <span
-                style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1; font-weight: 800; letter-spacing: -0.02em;">[TÍTULO<br><span
-                  style="font-weight: 200;">DEL FILM]</span></span>
+          <article class="film-card">
+            <div class="film-poster film-poster--deep">
+              <span class="film-index">03</span>
+              <span class="film-title">[TÍTULO<br><span>DEL FILM]</span></span>
             </div>
-            <div style="display: flex; flex-direction: column; gap: 4px;">
-              <span style="font-size: 18px; font-weight: 600;">[Título del cortometraje]</span>
-              <span style="font-size: 14px; color: #5c3f3f;">[Año] · [Género] · Dir. [Nombre]</span>
+            <div class="film-meta">
+              <span class="film-name">[Título del cortometraje]</span>
+              <span class="film-detail">[Año] · [Género] · Dir. [Nombre]</span>
             </div>
           </article>
 
@@ -175,40 +130,30 @@
 
 
     <!-- ====== Servicios ====== -->
-    <section id="servicios"
-      style="padding: clamp(64px, 9vw, 128px) clamp(24px, 5vw, 72px); background: var(--red); color: #ffffff;">
-      <div style="max-width: 1296px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px;">
-        <h2
-          style="margin: 0; font-size: clamp(36px, 5vw, 72px); line-height: 1; letter-spacing: -0.03em; font-weight: 800;">
-          LO QUE<span style="font-weight: 200;"> HACEMOS</span></h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 40px 32px;">
-          <div
-            style="flex: 1 1 220px; min-width: 0; border-top: 2px solid #ffffff; padding-top: 20px; display: flex; flex-direction: column; gap: 12px;">
-            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">01</span>
-            <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.01em;">Desarrollo</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; font-weight: 300;">Guion, carpeta de proyecto y
-              estructura financiera para que una idea esté lista para filmarse.</p>
+    <section id="servicios" class="content-section content-section--red">
+      <div class="section-shell section-stack">
+        <h2 class="section-title section-title--light">
+          LO QUE<span> HACEMOS</span></h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <span class="index">01</span>
+            <h3>Desarrollo</h3>
+            <p>Guion, carpeta de proyecto y estructura financiera para que una idea esté lista para filmarse.</p>
           </div>
-          <div
-            style="flex: 1 1 220px; min-width: 0; border-top: 2px solid #ffffff; padding-top: 20px; display: flex; flex-direction: column; gap: 12px;">
-            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">02</span>
-            <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.01em;">Producción</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; font-weight: 300;">Producción ejecutiva y de línea,
-              con equipos que cuidan el presupuesto y la visión de cada película.</p>
+          <div class="service-item">
+            <span class="index">02</span>
+            <h3>Producción</h3>
+            <p>Producción ejecutiva y de línea, con equipos que cuidan el presupuesto y la visión de cada película.</p>
           </div>
-          <div
-            style="flex: 1 1 220px; min-width: 0; border-top: 2px solid #ffffff; padding-top: 20px; display: flex; flex-direction: column; gap: 12px;">
-            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">03</span>
-            <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.01em;">Postproducción</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; font-weight: 300;">Edición, color, diseño sonoro y
-              entregables para festivales, salas y plataformas.</p>
+          <div class="service-item">
+            <span class="index">03</span>
+            <h3>Postproducción</h3>
+            <p>Edición, color, diseño sonoro y entregables para festivales, salas y plataformas.</p>
           </div>
-          <div
-            style="flex: 1 1 220px; min-width: 0; border-top: 2px solid #ffffff; padding-top: 20px; display: flex; flex-direction: column; gap: 12px;">
-            <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.18em;">04</span>
-            <h3 style="margin: 0; font-size: 26px; font-weight: 800; letter-spacing: -0.01em;">Distribución</h3>
-            <p style="margin: 0; font-size: 17px; line-height: 1.55; font-weight: 300;">Estrategia de festivales, ventas
-              y estreno para que cada película encuentre a su público.</p>
+          <div class="service-item">
+            <span class="index">04</span>
+            <h3>Distribución</h3>
+            <p>Estrategia de festivales, ventas y estreno para que cada película encuentre a su público.</p>
           </div>
         </div>
       </div>
@@ -216,93 +161,67 @@
 
 
     <!-- ====== Reconocimientos ====== -->
-    <section style="padding: clamp(56px, 7vw, 96px) clamp(24px, 5vw, 72px); background: #ffffff;">
-      <div style="max-width: 1296px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px;">
-        <p
-          style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red);">
-          Selección oficial y reconocimientos</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-          <div
-            style="flex: 1 1 200px; border: 2px solid var(--red); color: var(--red); padding: 28px 20px; text-align: center; font-size: 18px; font-weight: 800; letter-spacing: 0.02em;">
-            [FESTIVAL]<span style="font-weight: 200;"> [AÑO]</span></div>
-          <div
-            style="flex: 1 1 200px; border: 2px solid var(--red); color: var(--red); padding: 28px 20px; text-align: center; font-size: 18px; font-weight: 800; letter-spacing: 0.02em;">
-            [FESTIVAL]<span style="font-weight: 200;"> [AÑO]</span></div>
-          <div
-            style="flex: 1 1 200px; border: 2px solid var(--red); color: var(--red); padding: 28px 20px; text-align: center; font-size: 18px; font-weight: 800; letter-spacing: 0.02em;">
-            [PREMIO]<span style="font-weight: 200;"> [AÑO]</span></div>
-          <div
-            style="flex: 1 1 200px; border: 2px solid var(--red); color: var(--red); padding: 28px 20px; text-align: center; font-size: 18px; font-weight: 800; letter-spacing: 0.02em;">
-            [FESTIVAL]<span style="font-weight: 200;"> [AÑO]</span></div>
+    <section class="content-section awards-section content-section--white">
+      <div class="section-shell awards-wrap">
+        <p class="section-kicker section-kicker--tight">Selección oficial y reconocimientos</p>
+        <div class="award-grid">
+          <div class="award-item">[FESTIVAL]<span> [AÑO]</span></div>
+          <div class="award-item">[FESTIVAL]<span> [AÑO]</span></div>
+          <div class="award-item">[PREMIO]<span> [AÑO]</span></div>
+          <div class="award-item">[FESTIVAL]<span> [AÑO]</span></div>
         </div>
       </div>
     </section>
 
 
     <!-- ====== Contacto ====== -->
-    <section id="contacto" style="padding: clamp(64px, 9vw, 128px) clamp(24px, 5vw, 72px); background: var(--blush);">
-      <div style="max-width: 1296px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px 80px;">
-        <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 28px;">
-          <h2
-            style="margin: 0; font-size: clamp(36px, 5vw, 72px); line-height: 1; letter-spacing: -0.03em; font-weight: 800; color: var(--red);">
-            HABLEMOS<br><span style="font-weight: 200;">DE TU PROYECTO</span></h2>
-          <p style="margin: 0; font-size: 19px; line-height: 1.6; font-weight: 300; max-width: 440px;">¿Tienes un guion,
+    <section id="contacto" class="content-section content-section--blush">
+      <div class="section-shell contact-layout">
+        <div class="contact-copy">
+          <h2 class="section-title">HABLEMOS<br><span>DE TU PROYECTO</span></h2>
+          <p>¿Tienes un guion,
             un documental en marcha o una idea que quieres producir? Cuéntanos y te respondemos.</p>
-          <a href="mailto:[correo@catrinafilms.com]"
-            style="font-size: 20px; font-weight: 600; color: var(--red); border-bottom: 2px solid var(--red); align-self: flex-start; padding-bottom: 2px;">[correo@catrinafilms.com]</a>
+          <a class="contact-email" href="mailto:[correo@catrinafilms.com]">[correo@catrinafilms.com]</a>
         </div>
-        <form style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px;">
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="nombre"
-              style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red);">Nombre</label>
-            <input id="nombre" type="text" placeholder="Tu nombre"
-              style="border: 0; border-bottom: 2px solid var(--red); background: transparent; font-family: inherit; font-size: 18px; padding: 12px 0; color: var(--ink); border-radius: 0;">
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field-group">
+            <label for="nombre" class="field-label">Nombre</label>
+            <input id="nombre" class="field-input" name="nombre" type="text" placeholder="Tu nombre">
+            <small class="field-error" aria-live="polite"></small>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="correo"
-              style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red);">Correo
-              electrónico</label>
-            <input id="correo" type="email" placeholder="tu@correo.com"
-              style="border: 0; border-bottom: 2px solid var(--red); background: transparent; font-family: inherit; font-size: 18px; padding: 12px 0; color: var(--ink); border-radius: 0;">
+          <div class="field-group">
+            <label for="correo" class="field-label">Correo electrónico</label>
+            <input id="correo" class="field-input" name="correo" type="email" placeholder="tu@correo.com">
+            <small class="field-error" aria-live="polite"></small>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <label for="mensaje"
-              style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red);">Tu
-              proyecto</label>
-            <textarea id="mensaje" rows="4" placeholder="Cuéntanos de qué trata"
-              style="border: 0; border-bottom: 2px solid var(--red); background: transparent; font-family: inherit; font-size: 18px; padding: 12px 0; color: var(--ink); resize: vertical; border-radius: 0;"></textarea>
+          <div class="field-group">
+            <label for="mensaje" class="field-label">Tu proyecto</label>
+            <textarea id="mensaje" class="field-textarea" name="mensaje" rows="2" placeholder="Cuéntanos de qué trata"></textarea>
+            <small class="field-error" aria-live="polite"></small>
           </div>
-          <button class="btn-red" type="button"
-            style="align-self: flex-start; background: var(--red); color: #ffffff; border: 0; font-family: inherit; font-weight: 600; font-size: 16px; padding: 18px 36px; cursor: pointer; min-height: 52px;">Enviar
-            mensaje</button>
+          <button class="submit-button" type="submit">Enviar mensaje</button>
         </form>
       </div>
     </section>
 
 
     <!-- ====== Footer ====== -->
-    <footer style="background: var(--red); color: #ffffff; padding: 56px clamp(24px, 5vw, 72px) 40px;">
-      <div style="max-width: 1296px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
-        <div
-          style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 40px;">
-          <div
-            style="display: inline-flex; align-items: baseline; background: #ffffff; color: var(--red); padding: 10px 18px;">
-            <span style="font-weight: 800; font-size: 22px; letter-spacing: -0.02em;">CATRINA</span>
-            <span style="font-weight: 200; font-size: 22px; letter-spacing: 0.01em;">FILMS</span>
+    <footer class="footer">
+      <div class="section-shell footer-inner">
+        <div class="footer-top">
+          <div class="brand-mark brand-mark--light">
+            <span class="brand-mark__word">CATRINA</span>
+            <span class="brand-mark__word brand-mark__word--light">FILMS</span>
           </div>
-          <nav aria-label="Redes"
-            style="display: flex; flex-wrap: wrap; gap: 12px 32px; font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;">
-            <a class="nav-link" href="#">Instagram</a>
-            <a class="nav-link" href="#">Vimeo</a>
-            <a class="nav-link" href="#">YouTube</a>
-            <a class="nav-link" href="#">Letterboxd</a>
+          <nav aria-label="Redes" class="footer-nav nav-link">
+            <a href="#">Instagram</a>
+            <a href="#">Vimeo</a>
+            <a href="#">YouTube</a>
+            <a href="#">Letterboxd</a>
           </nav>
         </div>
-        <div aria-hidden="true"
-          style="height: 14px; background: repeating-linear-gradient(90deg, #ffffff 0, #ffffff 18px, transparent 18px, transparent 36px); opacity: 0.9;">
-        </div>
-        <div
-          style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; font-size: 14px; font-weight: 300;">
+        <div aria-hidden="true" class="site-footer-divider"></div>
+        <div class="footer-bottom">
           <span>© 2026 Catrina Films. Hecho en México.</span>
           <span>Cine independiente mexicano</span>
         </div>
@@ -310,6 +229,8 @@
     </footer>
 
   </div>
+
+  <script type="module" src="/src/contact-form.js"></script>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
