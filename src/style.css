@@ -54,10 +54,13 @@ img,svg{display:block;max-width:100%}
 .catalog-grid{display:flex;flex-wrap:wrap;gap:32px}
 .film-card{flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:16px;transition:transform .25s ease}
 .film-card:hover{transform:translateY(-6px)}
-.film-poster{aspect-ratio:2/3;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between}
+.film-poster{position:relative;aspect-ratio:2/3;box-sizing:border-box;overflow:hidden}
 .film-poster--red{background:var(--red);color:#fff}
 .film-poster--light{background:#fff;color:var(--red);border:3px solid var(--red)}
 .film-poster--deep{background:var(--deep);color:#fff}
+.film-poster__image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.film-poster__fallback{display:none;position:absolute;inset:0;padding:28px;box-sizing:border-box;flex-direction:column;justify-content:space-between}
+.film-poster--fallback .film-poster__fallback{display:flex}
 .film-title{font-size:clamp(28px,3.2vw,44px);line-height:1;font-weight:800;letter-spacing:-.02em}
 .film-title span{font-weight:200;text-transform:uppercase;letter-spacing:-.01em}
 .film-meta{display:flex;flex-direction:column;gap:4px}
